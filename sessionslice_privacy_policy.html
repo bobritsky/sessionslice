@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for the SessionSlice Android application.">
+  <meta name="theme-color" content="#070a0f">
+  <title>Privacy Policy | SessionSlice</title>
+  <link rel="icon" href="assets/sessionslice-logo-mark.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="SessionSlice home">
+        <img src="assets/sessionslice-logo-dark.png" alt="SessionSlice">
+      </a>
+      <div class="nav-links"><a href="index.html">Home</a></div>
+    </nav>
+  </header>
+
+  <main class="policy-main">
+    <header>
+      <p class="eyebrow">SessionSlice for Android</p>
+      <h1>Privacy Policy</h1>
+      <p>Effective date: September 17, 2026</p>
+    </header>
+
+    <section>
+      <h2>Who we are</h2>
+      <p>SessionSlice is developed and published by Igor Bobritskiy ("SessionSlice", "we", "us", or "our"). This policy explains how the SessionSlice Android application accesses, uses, stores, and shares information.</p>
+      <p class="notice"><strong>Privacy contact:</strong> <span class="placeholder">igor.bobritskii.rs@gmail.com</span></p>
+    </section>
+
+    <section>
+      <h2>Summary</h2>
+      <ul>
+        <li>Your session audio, Session names, Slice names, Marks, and audio metadata are stored on your device or in a folder you select. SessionSlice does not upload this content to our servers.</li>
+        <li>SessionSlice uses Firebase services for account-based trial and entitlement synchronization, product analytics, and crash diagnostics when Firebase is configured in the installed build.</li>
+        <li>Google Play processes purchases for the lifetime unlock. We do not receive or store your payment-card details.</li>
+        <li>SessionSlice does not contain third-party advertising and does not sell personal information.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Information the app accesses or processes</h2>
+
+      <h3>Microphone and session audio</h3>
+      <p>SessionSlice requests microphone permission so it can monitor sound levels, record rehearsal audio, and detect playing ranges. While recording, Android may show a foreground-service notification and microphone indicator. Audio is written as a continuous WAV master. Session and Slice metadata is stored in a JSON sidecar. Derived WAV or M4A exports are created only when you request them.</p>
+      <p>We do not transmit audio recordings, filenames, Session names, Slice names, Marks, search text, or file paths to Firebase Analytics, Crashlytics, our servers, or advertising services.</p>
+
+      <h3>Files and storage</h3>
+      <p>Recordings and related files are stored in app-specific device storage, on a writable SD card when selected, or in a folder you choose through Android's system folder picker. Folder access is limited to locations you explicitly authorize. Temporary capture and export files may be created in the app cache and are removed after successful processing or during cleanup.</p>
+
+      <h3>Google sign-in and Firebase Authentication</h3>
+      <p>For paid/trial builds, SessionSlice may ask you to choose a Google account to establish and restore trial or lifetime-unlock access. Google Identity Services provides an identity token to Firebase Authentication. Firebase may process your Google account identifier and basic account information, such as your email address and display name, under Google's terms and privacy policy. SessionSlice uses the resulting Firebase user identifier to locate your entitlement record; it does not use your Google account to read Gmail, Drive, contacts, or unrelated account data.</p>
+
+      <h3>Trial and entitlement information</h3>
+      <p>SessionSlice stores trial start time, last-known app time, entitlement user identifier, last synchronization time, and lifetime-unlock status locally. In Firebase Firestore, the app stores a record keyed by the Firebase user identifier containing trial start and end timestamps, account-record creation and synchronization timestamps, and lifetime-unlock status and time. This information is used to provide the trial, reduce clock manipulation, and restore access across installations.</p>
+
+      <h3>Product analytics</h3>
+      <p>When Firebase is configured, Firebase Analytics receives product-usage events such as recording start and stop, recording duration, Slice and Mark counts, threshold mode and value, Session or timeline opening, editing actions, screen and control interactions, scroll-depth categories, export format, quality and duration, and trial, paywall, and purchase-funnel events. These events contain enum, count, duration, or numeric product metadata rather than user-entered content or audio.</p>
+      <p>Firebase Analytics may also process app-instance identifiers, device and operating-system information, approximate location derived from IP address, and other technical information collected by the Firebase SDK. We use this information to understand aggregate app usage and improve SessionSlice.</p>
+
+      <h3>Crash and diagnostic information</h3>
+      <p>When Firebase is configured, Firebase Crashlytics may receive crash reports, stack traces, app and operating-system versions, device information, and technical diagnostics. SessionSlice adds limited diagnostic context such as the current screen, whether recording or export was active, a broad Session-duration category, Slice and Mark counts, export format and quality, and failure area. Crash reports do not intentionally include audio, filenames, file paths, Session or Slice names, search text, or purchase tokens.</p>
+
+      <h3>Purchases and payments</h3>
+      <p>SessionSlice uses Google Play Billing for the one-time <em>lifetime_unlock</em> product. Google Play processes the transaction and payment information. The app receives product details, price, purchase status, and a purchase token needed to verify and acknowledge the purchase through Google Play. SessionSlice stores a local purchased-status flag and may synchronize lifetime-unlock status to the Firebase entitlement record. We do not receive or store your full card or bank details.</p>
+
+      <h3>Device backup</h3>
+      <p>Android backup or device-transfer features may back up eligible app preferences and local app data according to your device and Google account settings. Files saved in a user-selected folder or removable storage remain under your control and may be handled separately by your device, storage provider, or backup software.</p>
+    </section>
+
+    <section>
+      <h2>How we use information</h2>
+      <ul>
+        <li>Provide microphone recording, automatic Slice detection, playback, editing, and export.</li>
+        <li>Save your settings and maintain trial or purchased access.</li>
+        <li>Restore entitlements after reinstalling or changing devices.</li>
+        <li>Measure feature reliability and aggregate product usage.</li>
+        <li>Diagnose crashes, failed exports, storage errors, and billing problems.</li>
+        <li>Prevent abuse of trial and purchase functionality and comply with legal obligations.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Sharing and service providers</h2>
+      <p>We do not sell your personal information. Information is shared only as needed with service providers supporting app functionality:</p>
+      <ul>
+        <li><strong>Google Play:</strong> app distribution, licensing, billing, purchase restoration, and Play-provided diagnostics.</li>
+        <li><strong>Google Identity and Firebase Authentication:</strong> optional account sign-in and identity verification.</li>
+        <li><strong>Firebase Firestore:</strong> trial and lifetime-unlock entitlement synchronization.</li>
+        <li><strong>Firebase Analytics:</strong> product-usage measurement.</li>
+        <li><strong>Firebase Crashlytics:</strong> crash and reliability diagnostics.</li>
+      </ul>
+      <p>Google processes information under its own terms and privacy policies. Information may also be disclosed when required by law, to protect users or the service, or as part of a business transfer subject to appropriate safeguards.</p>
+    </section>
+
+    <section>
+      <h2>Retention and deletion</h2>
+      <p>Recordings and metadata remain on your device or selected storage until you delete them in SessionSlice, delete them through your file manager, clear app storage, or uninstall the app. Files placed in user-selected folders or removable storage may remain after uninstalling.</p>
+      <p>Local settings, trial state, and purchased-status cache remain until app data is cleared or the app is uninstalled, subject to Android backup and restore. Firebase entitlement records are retained while needed to provide trial and purchased access and maintain transaction-related records. Analytics and crash information is retained according to the configured Firebase retention controls and Google's applicable service policies.</p>
+      <p>You may request deletion of your Firebase Authentication account and associated entitlement record by contacting us at the privacy contact above. We may retain limited records when legally required or necessary to prevent fraud, resolve disputes, and enforce agreements.</p>
+    </section>
+
+    <section>
+      <h2>Your choices</h2>
+      <ul>
+        <li>You may deny microphone permission, but recording and sound-level monitoring will not work.</li>
+        <li>You choose whether to sign in with Google when account-based entitlement setup is required.</li>
+        <li>You can delete Sessions and exports from the app or the storage location you selected.</li>
+        <li>You can clear local application data through Android settings.</li>
+        <li>You can manage Google account, Play purchase, advertising, analytics, and backup settings through Google and Android controls where available.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Security</h2>
+      <p>We use Android app-private storage where applicable, system-mediated folder access, HTTPS connections provided by Google and Firebase SDKs, and access controls for cloud entitlement data. No method of storage or transmission is completely secure, and we cannot guarantee absolute security.</p>
+    </section>
+
+    <section>
+      <h2>Children's privacy</h2>
+      <p>SessionSlice is a general-audience music utility and is not directed specifically to children. We do not knowingly use the app to collect personal information from children in violation of applicable law. A parent or guardian who believes a child has provided personal information may contact us to request deletion.</p>
+    </section>
+
+    <section>
+      <h2>International processing</h2>
+      <p>Google and Firebase may process information on servers located outside your country. Where required, service providers use contractual and legal safeguards for international transfers.</p>
+    </section>
+
+    <section>
+      <h2>Changes to this policy</h2>
+      <p>We may update this policy when SessionSlice features, service providers, or legal requirements change. The updated policy will be posted at this URL with a revised effective date.</p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Developer: Igor Bobritskiy</p>
+      <p>Email: <span class="placeholder">igor.bobritskii.rs@gmail.com</span></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>&copy; 2026 Igor Bobritskiy. All rights reserved.</span>
+    <span><a href="index.html">SessionSlice home</a></span>
+  </footer>
+</body>
+</html>
